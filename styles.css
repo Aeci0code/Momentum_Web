@@ -1,0 +1,626 @@
+*{
+    box-sizing: border-box;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Roboto' ,sans-serif;  
+    margin: 0;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5%;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    color: white;
+    background-color: rgba(56,65,84,255);
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgba(18,31,57,1);
+}
+
+.color1{
+    color: rgba(56,65,84,255);
+    font-weight: bolder;
+}
+.color-acento{
+    color: rgb(184, 111, 28);
+    font-weight: bolder;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header a{
+    display: flex;
+}
+
+header .minilogo{
+    background-image: url(assets/minilogo.png);
+    
+    background-size: cover;
+    background-position: center center;
+    height: 30px;
+    width: 30px;
+    margin-top: 22px;
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 10px;
+    font-weight: bold;
+    color: rgba(56,65,84,255);
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgba(56,65,84,255);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/pexels-tara-winstead-8850620.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button{
+    font-size: 1,75em;
+}
+
+#Somos-NeoCivic-Consulting{
+
+}
+
+#Somos-NeoCivic-Consulting .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-servicios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#nuestros-servicios .container{
+    padding: 200px 0px;
+}
+
+#nuestros-servicios h2{
+    margin: 0;
+    font-size: 3.2em;
+}
+
+
+
+#nuestros-servicios h4{
+   font-weight: lighter;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/Estrategia.jpg)
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/opinión-publica.jpg)
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/Analisis.jpg)
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/coaching.jpg)
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    color: rgba(56,65,84,255);
+}
+
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#contacto h2{
+    font-size: 9vw;
+}
+
+#contacto button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230
+    );
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#servicios h1 {
+   text-align: center;
+    color: rgba(56,65,84,255);
+}
+
+#servicios h2 {
+    text-align: center;
+    color: rgba(56,65,84,255);
+    background-color: rgba(243,237,237,255);
+    text-align: center;
+    height: 120px;
+    padding: 10px;
+}
+
+#servicios h4{
+    font: inherit;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#servicios p{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#Formulario {
+    display: flex;
+    justify-content: center; 
+}
+
+#Formulario h3{
+    text-align: center;
+    font-size: large;
+    
+}
+
+#Formulario label{
+    font-size: medium;
+}
+
+#Formulario form{
+    text-align: left;
+}
+
+#Formulario input{
+    border-radius: 5px;
+    
+}
+
+#Formulario textarea{
+    border-radius: 5px;
+}
+
+
+
+
+.formulario-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 500px;
+    width: 100vw;
+    
+    color: white;
+    background-image: linear-gradient( 
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    )
+    ,url(assets/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
+#Formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+form input {
+    border-radius: 5px;
+}
+
+
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .minilogo{
+        margin-left: 50px;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #Somos-NeoCivic-Consulting .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Somos-NeoCivic-Consulting .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Somos-NeoCivic-Consulting h2{
+        margin-top: 0px;
+    }
+    #Somos-NeoCivic-Consulting .img-container{
+        background-image: url(assets/Logo1.jpg);
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        height: 400px;
+        width: 400px;
+    }
+
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios .p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicio .carta{
+        padding: 15px;
+    }
+
+
+
+
+    #servicios .container{   
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        
+    }
+
+    #servicios p{
+        font-weight: bolder;
+        text-indent: 40px;
+
+    }
+
+    #servicios .estrategias-container{
+        display: flex;
+        text-align: left;
+        min-height: 300px;       
+        padding: 30px;
+        gap: 10px;
+    }
+
+   
+
+    .estrategias-container .img-container{
+        background-image: url(assets/Estrategia.jpg);
+        background-size: 400px 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .estrategias-container .text-container{
+    
+        padding: 20px;
+        width: 60%;
+    }
+
+    #servicios .gestion-container{
+        display: flex;
+        text-align: left;
+        min-height: 300px;
+        padding: 30px;
+    }
+
+    #servicios h1 {
+        text-align: left;
+        
+     }
+     
+     #servicios h2 {
+         text-align: center;
+         background-color: white;
+         height: auto;
+     }
+
+    .gestion-container .img-container{
+        background-image: url(assets/opinión-publica.jpg);
+        background-size: 400px 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .gestion-container .text-container{
+        
+        padding: 20px;
+        width: 60%;
+    }
+
+
+
+
+    #servicios .analicis-container{
+        display: flex;
+        text-align: left;
+        min-height: 300px;
+       
+        padding: 30px;
+    }
+
+   
+
+    .analicis-container .img-container{
+        background-image: url(assets/Analisis.jpg);
+        background-size: 400px 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .analicis-container .text-container{
+    
+        padding: 20px;
+        width: 60%;
+    }
+
+
+    #servicios .coaching-container{
+        display: flex;
+        text-align: left;
+        min-height: 300px;
+        padding: 30px;
+    }
+
+   
+
+    .coaching-container .img-container{
+        background-image: url(assets/coaching.jpg);
+        background-size: 400px 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .coaching-container .text-container{
+    
+        padding: 20px;
+        width: 60%;
+    }
+
+
+    #misión-visión .container{
+       
+        
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    #misión-visión .mision-container{
+        display: flex;
+        text-align: left;
+        height: 50vh;
+        padding: 30px;
+    }
+
+   
+
+    .mision-container .img-container{
+        background-image: url(assets/opinión-publica.jpg);
+        background-size: cover;
+        background-position: center center;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .mision-container .text-container{
+    
+        padding: 20px;
+        width: 60%;
+    }
+
+
+    #misión-visión .vision-container{
+       
+        display: flex;
+        text-align: left;
+        height: 50vh;
+        padding: 30px;
+    }
+
+    .vision-container .img-container{
+        background-image: url(assets/Bino.png);
+        background-size: cover;
+        background-position: center center;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .vision-container .text-container{
+        
+        padding: 20px;
+        width: 60%;
+    }
+
+    #Formulario{
+       background-color: rgba(56,65,84,255);
+    }
+
+    .formulario-container{ 
+        
+        width: 300px;
+        margin-top: 100px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    
+}
+
+
+#misión-visión{
+    text-align: center;
+    width: 100vw;
+    padding: 30px;
+}
+
+
+
+#misión-visión h1{
+    color: rgba(18,31,57,1);
+}
+
+
